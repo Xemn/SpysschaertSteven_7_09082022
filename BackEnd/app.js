@@ -18,6 +18,10 @@ moongoose
 // Création de notre application express : 
 const app = express();
 
+/* Afin de récupérer et comprendre nos requête, nous
+devons les transformer en objet JSON :  */
+app.use(express.json());
+
 // Export de notre application : 
 module.exports = app;
 
