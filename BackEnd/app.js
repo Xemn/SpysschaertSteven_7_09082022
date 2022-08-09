@@ -15,12 +15,18 @@ moongoose
     .then (() => console.log("Connexion à MongoDB réussié"))
     .catch(() => console.log("Connexion à MongoDB échouée"))
 
+// Imoort de nos fichiers de routing : 
+const userRoutes = require('./routes/user');
+
 // Création de notre application express : 
 const app = express();
 
 /* Afin de récupérer et comprendre nos requête, nous
 devons les transformer en objet JSON :  */
 app.use(express.json());
+
+// Utilisation de nos différentes routes : 
+app.use("api/auth/", userRoutes);
 
 // Export de notre application : 
 module.exports = app;
