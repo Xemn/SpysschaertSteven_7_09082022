@@ -26,7 +26,7 @@ devons les transformer en objet JSON :  */
 app.use(express.json());
 
 // Utilisation de nos différentes routes : 
-app.use("api/auth/", userRoutes);
+app.use("/api/auth", userRoutes);
 
 // Export de notre application : 
 module.exports = app;
