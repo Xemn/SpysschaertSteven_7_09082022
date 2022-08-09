@@ -11,7 +11,7 @@ dotenv.config();
 // Création de notre middleware express concernant la création d'un utilisateur : 
 exports.signup = (req, res, next) => {
     // Nous allons d'abord voir si notre base de données est vide : 
-    User.findAll()
+    User.find()
     .then((result) => {
         // Si elle l'est notre premier utilisateur sera admin : 
         if (result.length == 0)
