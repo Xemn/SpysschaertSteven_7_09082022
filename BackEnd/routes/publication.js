@@ -15,6 +15,8 @@ router.get("/", auth, publiCtrl.getAllPublications);
 router.get("/:id", auth, publiCtrl.getOnePublication);
 // Route PUT (Endpoint) pour la modification d'une publication précise :
 router.put("/:id", auth, publiCtrl.updateOnePublication);
+// Route DELETE (Endpoint) pour la supression d'une publication précise : 
+router.delete("/:id", auth, publiCtrl.deletePublication);
 
 // Export de nos routes : 
 module.exports = router;
