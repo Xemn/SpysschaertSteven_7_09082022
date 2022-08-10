@@ -25,3 +25,25 @@ exports.getOnePublication = (req, res, next) => {
     .then((publication) => res.status(200).json(publication))
     .catch((error) => res.status(400).json({error}))
 };
+// Logique métier afin de modifier une publication précise : 
+exports.updateOnePublication = (req, res, next) => {
+    Publication.findOne({_id : req.params.id})
+    .then((publicaton) => {
+        /* On vérifie que l'utilsateur qui fait la demande soit celle qui a 
+        créé la publication, ou alors que l'utilisateur ait un rôle
+        d'administrateur : */
+        if (publicaton.userId != req.auth.userId || publicaton.isAdmin === false) {
+            res.status(401).json({message : "Vous n'êtes pas autorisé à faire cette action !"});
+        }
+        else{
+            // On modifie la publication : 
+            Publication.updateOne(
+                {_id : req.params.id},
+                {...req.body, _id: req.params.id}
+            )
+            .then(()=> res.status(200).json({ message : "Publication modifiée avec succès !" }))
+            .catch((error) => res.status(400).json({error}))
+        }
+    })
+    .catch((error) => res.status(500).json({error}))
+}
