@@ -19,3 +19,9 @@ exports.getAllPublications = (req, res, next) => {
     .then((publications) => res.status(200).json(publications))
     .catch((error) => res.status(400).json({error}))
 };
+// Logique métier pour la récupération d'une publication précise : 
+exports.getOnePublication = (req, res, next) => {
+    Publication.findOne({_id : req.params.id})
+    .then((publication) => res.status(200).json(publication))
+    .catch((error) => res.status(400).json({error}))
+};
