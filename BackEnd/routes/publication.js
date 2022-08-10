@@ -7,6 +7,8 @@ const publiCtrl = require("../controllers/publication");
 
 // Route POST (Endpoint) pour la création d'une publication : 
 router.post("/", publiCtrl.createPublication);
+// Route GET (Endpoint) pour la récupération de toutes les publications :
+router.get("/", publiCtrl.getAllPublications);
 
 // Export de nos routes : 
 module.exports = router;
