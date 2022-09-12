@@ -1,5 +1,7 @@
 // Import de notre module express : 
 const express = require("express");
+// Import de notre module Path :
+const path = require("path");
 //Import de notre module dotenv : 
 const dotenv = require("dotenv");
 dotenv.config();
@@ -25,6 +27,9 @@ const app = express();
 /* Afin de récupérer et comprendre nos requête, nous
 devons les transformer en objet JSON :  */
 app.use(express.json());
+
+// Indique à notre application Express de se servir du dossier static images :
+app.use("/images", express.static(path.join(__dirname, "images")));
 
 // Utilisation de nos différentes routes : 
 app.use("/api/auth", userRoutes);
