@@ -3,3 +3,6 @@ node_modules
 
 #Environement Variables
 .env
+
+#Image Folder
+images/
