@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 // Crétion de notre Schéma Publication : 
 const publicationSchema = mongoose.Schema({
     userId : { type: String, required: true },
+    userName : { type: String, required: true },
     message: { type: String, required: true },
     imageUrl: { type: String, default: ""},
     createdAt : { type : Date, default: Date.now},
