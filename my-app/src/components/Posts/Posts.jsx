@@ -51,16 +51,19 @@ export default function Posts({shouldUpdate, setShouldUpdate}) {
             {error && (<div className='error' >
                 {`Il y'a un problème lors de la récupération des données -${error}`}</div>)}
             <ul className='posts__list'>
-            {data.length !==0 && data.map(({_id, message, imageUrl, createdAt, likes, dislikes, userId}) => {
+            {data.length !==0 && data.map(({_id, userName, message, imageUrl, createdAt, likes, dislikes, userId}) => {
                     return(
                         <li key={_id}>
+                          <div className='posts__header'>
+                            <p className='posts__username'>{userName}</p>
                             {tokenUserId === userId || isAdmin  ? <div className='posts__adminPanel'><Delete id={_id} userId={userId} isDeleted={setIsDeleted} /><ModifyPost message={message} imageUrl={imageUrl} id={_id} userId={userId} modifyPublication={setModifyPost}/></div>: null}
-                            <div className='posts__message'>
-                                <p>{message}</p>
-                                {imageUrl && <img src={imageUrl} alt={`Photo du post n° ${_id}`} />}
-                                <DayJS date={createdAt} element="p" format="DD-MM-YYYY / HH:mm:ss " />
-                            </div>
-                            <Like id={_id} likes={likes} dislikes={dislikes} modifyLikes={setLikes} modifyDislikes={setDislikes}/>
+                          </div>
+                          <div className='posts__message'>
+                            <p>{message}</p>
+                            {imageUrl && <img src={imageUrl} alt={`Photo du post n° ${_id}`} />}
+                            <DayJS date={createdAt} element="p" format="DD-MM-YYYY / HH:mm:ss " />
+                          </div>
+                          <Like id={_id} likes={likes} dislikes={dislikes} modifyLikes={setLikes} modifyDislikes={setDislikes}/>
                         </li>
                         
                     )
