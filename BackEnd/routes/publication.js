@@ -19,6 +19,8 @@ router.get("/:id", auth, publiCtrl.getOnePublication);
 router.put("/:id", auth, multer, publiCtrl.updateOnePublication);
 // Route DELETE (Endpoint) pour la supression d'une publication précise : 
 router.delete("/:id", auth, publiCtrl.deletePublication);
+// Route POSY (Endpoint) pour liker ou disliker une publication précise : 
+router.post("/:id/like", auth, publiCtrl.likeDislikePost);
 
 // Export de nos routes : 
 module.exports = router;
