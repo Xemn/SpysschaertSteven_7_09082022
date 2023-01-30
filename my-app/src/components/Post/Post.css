@@ -1,0 +1,59 @@
+/*--- CSS POUR LE FORMULAIRE DE POST ---*/
+
+/*--- MOBILE-FIRST ---*/
+
+.sharingForm
+{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 2em;
+    width: 100%;
+    padding: 1em;
+    border-radius: 0;
+    border-bottom: 1px solid #4E5166;
+}
+
+.sharingForm__textfield
+{   
+    background-color: #FFF;
+    margin: 0;
+    border-radius: 32px;
+    height: 100%;
+    padding: 0;
+    border: 1px solid #4E5166;
+}
+
+.sharingForm__textfield::placeholder
+{
+    text-align: center;
+}
+
+/*--- MEDIA-QUERIES ---*/
+
+/*--- TABLET AND DESKTOP ---*/
+
+@media(min-device-width : 1024px)
+{
+    .sharingForm
+    {
+        margin: 0;
+        justify-content: center;
+    }
+    
+    .sharingForm__textfield
+    {
+       width: 25%;
+    }
+
+    .sharingForm__fileIcon
+    {
+        margin-left: 1.5em;
+    }
+
+    .sharingForm__sendIcon
+    {
+        margin-left: 1.5em;
+    }
+
+}

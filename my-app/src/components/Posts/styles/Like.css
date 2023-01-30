@@ -1,0 +1,37 @@
+/*--- CSS POUR LE COMPONENT LIKE ---*/
+
+.likePanel
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+span{
+    display: flex;
+}
+
+.likePanel__count
+{
+    margin: 0 1em;
+}
+
+.likePanel__thumbUp
+{
+    color : #4E5166
+}
+
+.likePanel__thumbDown
+{
+    color: #4E5166;
+}
+
+.likePanel__thumbUp:hover
+{
+    color: greenyellow;
+}
+
+.likePanel__thumbDown:hover
+{
+    color: red;
+}

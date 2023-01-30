@@ -1,0 +1,16 @@
+/*--- CSS POUR LE COMPONANT BANNER ---*/
+
+header{
+    text-align: center;
+    margin : 72px 25px 36px 25px;
+}
+
+.groupomania-logo-earth{
+    width: 51px;
+    height: 40px;
+}
+
+.groupomania-logo{
+    width: 258px;
+    height: 40px;
+}

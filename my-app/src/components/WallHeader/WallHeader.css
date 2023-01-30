@@ -1,0 +1,14 @@
+/*--- CSS POUR L'ENTÊTE DE NOTRE PAGE WALL ---*/
+
+.wallHeader
+{
+    color : #FD2D01;
+    border-bottom: 2px solid #4E5166;
+    width: 100%;
+}
+
+.wallHeader .wallHeader__logoutButton
+{
+    font-size: 2em;
+    padding: 0.25em;
+}

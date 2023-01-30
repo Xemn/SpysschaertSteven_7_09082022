@@ -1,0 +1,54 @@
+/*--- CSS POUR LE COMPOSANT MODIFYPOST ---*/
+
+.editButton
+{
+    font-size: 2em;
+    margin: 0.5em;
+    color: #4E5166;
+}
+
+.updatingForm
+{   
+    position: absolute;
+    top: 0;
+    left : 0;
+    margin: 0;
+    z-index : 1;
+    width: 100%;
+    height: 100%;;
+}
+
+.updatingForm__inputs
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.updatingForm  .updatingForm__textInput
+{
+    margin: 1em 1em 0 0;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+
+.updatingForm label
+{
+    margin: 1em 0;
+}
+
+.updatingForm__undoIcon
+{
+    color : #4E5166;
+}
+
+.updatingForm__buttons
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.updatingForm__sendIcon
+{
+    color: #FD2D01;
+}
