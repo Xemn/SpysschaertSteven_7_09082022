@@ -22,12 +22,22 @@
     position: relative;
 }
 
+.posts__header
+{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
 .posts__adminPanel
 {
     display: flex;
     justify-content: flex-end;
-    border-bottom: 1px solid #4E5166;
     width: 100%;
+}
+
+.posts__username
+{
+    margin-left: 1em;
 }
 
 .posts__message
