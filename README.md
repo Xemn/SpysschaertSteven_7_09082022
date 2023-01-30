@@ -77,3 +77,13 @@ En plus des fonctionnalités précédentes, un **administrateur** pourra :
 
 Dans une optique de facilité, le code a été pensé de manière à ce que le premier utilisateur créer sur notre application ait le rôle d'administrateur, tandis que tout les utilisateurs créer ensuite ne seront que de simple utilisateur.
 Je vous conseille donc de vous souvenir de l'adresse-mail et du mot de passe que vous utiliserez pour votre premier utilisateur.
+
+
+## Conclusion et remerciements
+
+Ce projet et mon **premier en ReactJS**, il est totalement améliorable ! 
+Notament avec un sytème de management tel que Redux. D'autres fonctionnalitées pourraient être créer, tel que la modification d'un utilisateur, etc.
+
+Je suis totalement ouvert à l'écoute de vos suggestions et conseil à cette adresse-mail : [spysschaert.pro@gmail.com](mailto:spysschaert.pro@gmail.com).
+
+Pour finir, je tiens à remercier les équipes pédagogiques et les créateurs des cours de la plateforme *OpenClassrooms* ainsi que mon mentor Monsieur Canipel J.
