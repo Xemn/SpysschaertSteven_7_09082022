@@ -2,6 +2,18 @@
 
 Ce repository correspond au Projet 7 du cursus **Développeur Web** d'*OpenClassrooms*.
 
+## Menu
+
+- [Brief du projet](#brief-du-projet)
+- [Stack Utilisées](#stack-utilisées)
+- [Installation du projet sur votre ordinateur](#installation-du-projet-sur-votre-ordinateur) :
+    - [Installation du back-end](#installation-de-la-partie-back-end-de-ce-projet)
+    - [Installation du front-end](#installation-de-la-partie-front-end-de-ce-projet)
+    - [Nota Benne](#nota-benne)
+- [Fonctionnalités de ce projet](#fonctionnalités-de-ce-projet)
+- [Création d'un compte administrateur](#création-dun-utilisateur-administrateur)
+- [Conclusion et remerciements](#conclusion-et-remerciements)
+
 ## Brief du projet
 
 Afin de savoir en quoi consiste ce projet, cliquez [ici](/scenario.pdf).
