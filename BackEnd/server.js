@@ -16,7 +16,7 @@ const normalizePort = (val) => {
   return false;
 };
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || "8000");
 
 /* Notre application à besoin de savoir sur quel port travailler, nous lui
 passons donc le port que nous venons de vérifier :  */
