@@ -15,6 +15,7 @@ exports.createPublication = (req, res, next) => {
     : { ...req.body };
     const publication = new Publication({
        userId : req.auth.userId,
+       userName : req.auth.userName,
         ...publicationObject,
     });
     publication
