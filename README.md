@@ -59,3 +59,16 @@ Vous pourrez enfin lancé votre application **front-end** en vous mettant à la 
 ### Nota Benne
 
 Il est important de savoir que votre serveur doit fonctionné en même temps que votre application, sinon aucune des fonctionnalités présentes dans ce code ne fonctionneront.
+
+## Fonctionnalités de ce projet
+
+Dans les fonctionnalités présentes sur cette application, vous pourrez retrouver pour un **utilisateur lambda** : 
+    - La capacité de vous *connecter*,
+    - La capcaité de vous *enregistrer*,
+    - La capacité de *créer* un post, avec ou sans image,
+    - La capacité de *modifier* vos posts,
+    - La capacité de *supprimer* un ou plusieurs de vos posts.
+En plus des fonctionnalités précédentes, un **administrateur** pourra : 
+    - *Modifier* **n'importe quel** post,
+    - *Supprimer* **n'importe quel** post.
+
