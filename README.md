@@ -48,3 +48,11 @@ Vous y êtes presque, voici les dernières choses à faire afin que votre serveu
 
 Je sais que tout ceci est fastidieux dependant ces étapes sont nécéssaires afin que le projet puisse tourner sur votre machine.
 
+### Installation de la partie front-end de ce projet
+
+Soyez rassuré, afin de faire fonctionner la partie front-end, vous n'aurez partiquement rien à faire.
+
+Avant de lancer l'application **front-end** vous devrez encore une fois créer un fichier `.env ` à la racine de votre dossier `my-app` et insérer dans ce fichier la ligne suivante : `REACT_APP_API_URL = `. Vous ferez suivre cette ligne de code par l'URL de votre API.
+
+Vous pourrez enfin lancé votre application **front-end** en vous mettant à la racine de votre dossier `my-app` et en tapant la commande suivante : `npm start`, normalement votre navigateur s'ouvrira sur la page `http://localhost:3000`. Si ce n'est pas le cas tapez donc l'URL précédente dans votre navigateur.
+
