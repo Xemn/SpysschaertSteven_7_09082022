@@ -67,13 +67,19 @@ exports.login = (req, res, next) => {
                 }
                 // Si les deux hash correspondent : 
                 res.status(200).json({
-                    // On crée un objet contentant l'userID et un token : 
+                    // On crée un objet contentant l'userID , si il est admin, son username et un token : 
                     userId : user._id,
+                    userName : user.username,
                     isAdmin : user.isAdmin,
+                   
                     token : jwt.sign(
                         // Payload : 
-                        { userId : user._id,
-                         isAdmin : user.isAdmin},
+                        { 
+                            userId : user._id,
+                            username : user.username,
+                            isAdmin : user.isAdmin,
+                         
+                        },
                     
                     // Chaîne secrète de développement temporaire (salt) :
                     process.env.TOKEN_KEYPHRASE,
