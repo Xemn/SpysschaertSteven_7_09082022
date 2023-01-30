@@ -56,3 +56,6 @@ Avant de lancer l'application **front-end** vous devrez encore une fois créer u
 
 Vous pourrez enfin lancé votre application **front-end** en vous mettant à la racine de votre dossier `my-app` et en tapant la commande suivante : `npm start`, normalement votre navigateur s'ouvrira sur la page `http://localhost:3000`. Si ce n'est pas le cas tapez donc l'URL précédente dans votre navigateur.
 
+### Nota Benne
+
+Il est important de savoir que votre serveur doit fonctionné en même temps que votre application, sinon aucune des fonctionnalités présentes dans ce code ne fonctionneront.
