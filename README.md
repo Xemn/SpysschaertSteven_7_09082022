@@ -72,3 +72,8 @@ En plus des fonctionnalités précédentes, un **administrateur** pourra :
     - *Modifier* **n'importe quel** post,
     - *Supprimer* **n'importe quel** post.
 
+
+## Création d'un utilisateur administrateur
+
+Dans une optique de facilité, le code a été pensé de manière à ce que le premier utilisateur créer sur notre application ait le rôle d'administrateur, tandis que tout les utilisateurs créer ensuite ne seront que de simple utilisateur.
+Je vous conseille donc de vous souvenir de l'adresse-mail et du mot de passe que vous utiliserez pour votre premier utilisateur.
