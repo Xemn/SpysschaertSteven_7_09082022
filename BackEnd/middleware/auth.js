@@ -17,9 +17,11 @@ module.exports = (req, res, next) => {
         const userId = decodedtoken.userId;
         // On récupère aussi notre clé isAdmin du payload du token : 
         const isAdmin = decodedtoken.isAdmin;
+        // On récupère aussi notre clé username du payload du token : 
+        const userName = decodedtoken.username;
         /* On ajoute à notre requête un objet auth afin qu'il contienne l'userID,
         et la clé isAdmin de note token : */
-        req.auth = { userId, isAdmin };
+        req.auth = { userId, isAdmin, userName };
         next();
     } catch (error) {
          res.status(401).json({
