@@ -1,8 +1,8 @@
 /*--- Component Posts : permettant d'afficher les différents posts à l'utilisateur : ---*/
 
 import React from 'react'
-import DayJS from 'react-dayjs'
 import {useState, useEffect} from "react"
+import dayjs from "dayjs"
 import Like from './Like'
 import Delete from './DeletePost'
 import ModifyPost from './ModifyPost'
@@ -61,7 +61,7 @@ export default function Posts({shouldUpdate, setShouldUpdate}) {
                           <div className='posts__message'>
                             <p>{message}</p>
                             {imageUrl && <img src={imageUrl} alt={`Photo du post n° ${_id}`} />}
-                            <DayJS date={createdAt} element="p" format="DD-MM-YYYY / HH:mm:ss " />
+                            <p>{dayjs(createdAt).format('MM-DD-HH:mm:ss')}</p>
                           </div>
                           <Like id={_id} likes={likes} dislikes={dislikes} modifyLikes={setLikes} modifyDislikes={setDislikes}/>
                         </li>
